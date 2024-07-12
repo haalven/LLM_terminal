@@ -17,7 +17,9 @@ while not question:
 
 client = OpenAI(api_key=my_api_key)
 gpt_model = 'gpt-4o'
-customized = 'You are a scientist, give short and formal answers. Tell me, if you are not sure. It is very important that your answer is correct!' # begging helps
+customized = 'You are a scientist, give short and formal answers. \
+Tell me, if you are not sure. It is very important that your \
+answer is correct!' # begging helps
 temp = 0.2 # will make it more focused and deterministic
 print()
 
