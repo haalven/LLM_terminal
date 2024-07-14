@@ -4,12 +4,13 @@
 
 my_api_key = '<YOUR_API_KEY_HERE>'
 
-from prompt_toolkit import prompt
-from sys import exit
+from sys import argv, exit
 from openai import OpenAI
 
-question = ''
+myname = argv.pop(0).split('/')[-1]
+question = '\x20'.join(argv)
 while not question:
+    from prompt_toolkit import prompt
     try: question = prompt('Q: ')
     except KeyboardInterrupt:
         print()
@@ -18,8 +19,8 @@ while not question:
 client = OpenAI(api_key=my_api_key)
 gpt_model = 'gpt-4o'
 customized = 'You are a scientist, give short and formal answers. \
-Tell me, if you are not sure. It is very important that your \
-answer is correct!' # begging helps
+    Tell me, if you are not sure. It is very important that your \
+    answer is correct!' # begging helps
 temp = 0.2 # will make it more focused and deterministic
 print()
 
@@ -35,7 +36,7 @@ try:
 
     real_model = completion.model
     answer = completion.choices[0].message.content
-    print(real_model + ':\n' + answer)
+    print('\x1B[1m' + real_model + '\x1B[m' + '\n' + answer)
     exit(0)
 
 except Exception as e:
