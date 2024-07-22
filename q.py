@@ -36,7 +36,7 @@ try:
 
     real_model = completion.model
     answer = completion.choices[0].message.content
-    print('\x1B[1m' + real_model + '\x1B[m' + '\n' + answer)
+    print(real_model + ':\n' + answer)
     exit(0)
 
 except Exception as e:
