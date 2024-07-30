@@ -4,6 +4,8 @@
 
 model = 'gemma2'
 #model = 'llama3.1'
+#model = 'phi3'
+#model = 'mistral'
 
 from os.path import basename
 from prompt_toolkit import prompt
