@@ -1,4 +1,4 @@
-ask LLMs in the terminal:
+# ask LLMs in the Terminal
 
 `ask_openai.py` – call the [OpenAI API](https://openai.com/api), fill in your `API_KEY`
 
