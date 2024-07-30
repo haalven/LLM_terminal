@@ -1,4 +1,4 @@
-openai
 prompt_toolkit
+openai
 requests
 rich
