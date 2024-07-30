@@ -21,3 +21,7 @@ Choose a specific OpenAI model by editing the `gpt_model = 'gpt-4o'` line. See a
 [ask_ollama.py](https://github.com/haalven/LLM_terminal/blob/main/ask_ollama.py) uses the [requests Python library](https://requests.readthedocs.io/) to call the [local Ollama API](https://ollama.com/) (based on [llama.cpp](https://en.wikipedia.org/wiki/Llama.cpp)). An internet connection is not required. Install Ollama first and start the local server (localhost:11434). To download LLMs use the `ollama run <model>` command.
 
 The best general LLMs for computers with 8…16 GB of RAM in July 2024 are `gemma2` by Google (9B, 5.4GB), `llama3.1` by Meta (8B, 4.7GB), `phi3` by Microsoft (4B, 2.2GB), and `mistral` by MistralAI (7B, 4.1GB). See also: [ollama.com/models](https://ollama.com/models).
+
+Example:
+
+![example screenshot](example.jpg)
