@@ -1,2 +1,4 @@
 openai
 prompt_toolkit
+requests
+rich
