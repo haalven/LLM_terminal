@@ -2,7 +2,7 @@
 
 # ask ChatGPT in the Terminal
 
-my_api_key = '***'
+my_api_key = 'sk-***'
 
 from os.path import basename
 from prompt_toolkit import prompt
