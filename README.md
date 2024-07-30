@@ -6,6 +6,6 @@ ask LLMs in the terminal:
 
 required:
 * [prompt_toolkit](https://github.com/prompt-toolkit/python-prompt-toolkit)
-* [openai](https://github.com/openai/openai-python)
-* [requests](https://requests.readthedocs.io/)
+* [openai](https://github.com/openai/openai-python) (ask_openai.py)
+* [requests](https://requests.readthedocs.io/) (ask_ollama.py)
 * [rich](https://github.com/Textualize/rich)
