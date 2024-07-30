@@ -1,6 +1,3 @@
-# q
-ask gpt in the terminal
-
-required: `openai`, `prompt_toolkit`
+ask LLM in the terminal
 
 fill in your `API_KEY`
