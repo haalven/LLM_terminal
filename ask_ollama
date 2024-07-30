@@ -1,4 +1,4 @@
-#!/Users/xhalc/code/ollama-api/.venv/bin/python3
+#!/usr/bin/venv python3
 
 # ask the Ollama API
 
