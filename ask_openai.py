@@ -1,4 +1,4 @@
-#!/usr/bin/venv python3
+#!/usr/bin/env python3
 
 # ask ChatGPT in the Terminal
 
