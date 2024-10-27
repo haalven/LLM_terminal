@@ -2,10 +2,18 @@
 
 # ask the Ollama API
 
-model = 'gemma2'
-#model = 'llama3.1'
-#model = 'phi3'
-#model = 'mistral'
+
+models = {
+    'gemma':    'gemma2',
+    'llama':    'llama3.1',
+    'phi':      'phi3.5',
+    'mistral':  'mistral',
+    'uncens1':  'CognitiveComputations/dolphin-llama3.1:latest',
+    'uncens2':  'llama2-uncensored'
+}
+
+model = models['gemma']
+
 
 from os.path import basename
 from prompt_toolkit import prompt
