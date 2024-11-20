@@ -4,6 +4,14 @@
 
 my_api_key = 'sk-***'
 
+# models: https://openai.com/api
+models = {
+    '4o':    'gpt-4o',
+    'o1pre': 'o1-preview'
+}
+openai_model = models['o1pre']
+
+
 from os.path import basename
 from prompt_toolkit import prompt
 from sys import argv, exit
@@ -22,7 +30,6 @@ while not question:
 
 # api args
 client = OpenAI(api_key=my_api_key)
-gpt_model = 'gpt-4o'
 customized = 'You are a scientist, give formal answers. \
     Tell me, if you are not sure. It is very important that your \
     answer is correct!' # begging helps
@@ -30,14 +37,22 @@ temp = 0.2 # will make it more focused and deterministic
 
 # call api
 try:
-    completion = client.chat.completions.create(
-      model=gpt_model,
-      temperature=temp,
-      messages=[
-        {'role': 'system', 'content': customized},
-        {'role': 'user', 'content': question}
-      ]
-    )
+    if openai_model == 'o1-preview':
+        completion = client.chat.completions.create(
+          model=openai_model,
+          messages=[
+            {'role': 'user', 'content': question}
+          ]
+        )
+    else:
+        completion = client.chat.completions.create(
+          model=openai_model,
+          temperature=temp,
+          messages=[
+            {'role': 'system', 'content': customized},
+            {'role': 'user', 'content': question}
+          ]
+        )
 
     real_model = str(completion.model)
     answer = str(completion.choices[0].message.content)
