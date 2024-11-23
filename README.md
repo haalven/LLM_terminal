@@ -14,7 +14,7 @@ required:
 
 [ask_openai.py](https://github.com/haalven/LLM_terminal/blob/main/ask_openai.py) uses the [openai Python library](https://github.com/openai/openai-python) to call the [OpenAI API](https://openai.com/api). An internet connection is required. You have to insert your `API_KEY` by editing the `my_api_key = 'sk-***'` line before running the script.
 
-Choose a specific OpenAI model by editing the `gpt_model = 'gpt-4o'` line. See also: [platform.openai.com/docs/models](https://platform.openai.com/docs/models).
+Choose a specific OpenAI model by editing the `openai_model = models['o1pre']` line. See also: [platform.openai.com/docs/models](https://platform.openai.com/docs/models).
 
 ## Ollama API
 
