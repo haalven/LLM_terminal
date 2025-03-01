@@ -7,9 +7,10 @@ my_api_key = 'sk-***'
 # models: https://openai.com/api
 models = {
     '4o':    'gpt-4o',
-    'o1pre': 'o1-preview'
+    'o1pre': 'o1-preview',
+    '4.5':   'gpt-4.5-preview'
 }
-openai_model = models['o1pre']
+openai_model = models['4.5']
 
 
 from os.path import basename
