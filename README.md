@@ -24,4 +24,4 @@ The best general LLMs for computers with 8…16 GB of RAM in March 2025 are `gem
 
 Example:
 
-![example screenshot](example.jpg)
+![example screenshot](example1.jpg)
