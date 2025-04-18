@@ -2,15 +2,17 @@
 
 # ask ChatGPT in the Terminal
 
-my_api_key = 'sk-***'
+my_api_key = 'your-api-key-here'
 
 # models: https://openai.com/api
 models = {
     '4o':    'gpt-4o',
     'o1pre': 'o1-preview',
-    '4.5':   'gpt-4.5-preview'
+    '4.5':   'gpt-4.5-preview',
+    '4.1':   'gpt-4.1-2025-04-14'
 }
-openai_model = models['4.5']
+
+openai_model = models['4.1']
 
 
 from os.path import basename
