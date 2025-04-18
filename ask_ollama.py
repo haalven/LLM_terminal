@@ -1,15 +1,12 @@
-#!/usr/bin/env python3
+#! /usr/bin/env python3
 
 # ask the Ollama API
 
-
 models = {
-    'gemma':    'gemma2',
-    'llama':    'llama3.1',
-    'phi':      'phi3.5',
-    'mistral':  'mistral',
-    'uncens1':  'CognitiveComputations/dolphin-llama3.1:latest',
-    'uncens2':  'llama2-uncensored'
+    'gemma12':    'gemma3:12b',
+    'gemma':      'gemma3:4b',
+    'llama':      'llama3.2',
+    'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest'
 }
 
 model = models['gemma']
