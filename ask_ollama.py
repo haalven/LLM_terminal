@@ -3,9 +3,9 @@
 # ask the Ollama API
 
 models = {
-    'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest',
     'llama':      'llama3.2',
     'gemma':      'gemma3:4b',
+    'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest',
 }
 
 from os.path import basename
