@@ -3,13 +3,10 @@
 # ask the Ollama API
 
 models = {
-    'gemma':      'gemma3:4b',
+    'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest',
     'llama':      'llama3.2',
-    'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest'
+    'gemma':      'gemma3:4b',
 }
-
-model = models['gemma']
-
 
 from os.path import basename
 from prompt_toolkit import prompt
@@ -17,9 +14,19 @@ from sys import argv, exit
 from requests import post
 from rich.console import Console
 from rich.markdown import Markdown
+from json import dumps
 
-# question
+# parameter
 myname = basename(argv.pop(0))
+if not argv:
+    exit('usage: ' + myname + ' <model> [question?]\n'
+         'models: ' + str(dumps(models, indent=2, ensure_ascii=False)))
+model = argv.pop(0)
+if model in models:
+    model = models[model]
+else:
+    exit('model error: ' + model + ' not in '
+         + str(dumps(models, indent=2, ensure_ascii=False)))
 question = '\x20'.join(argv)
 while not question:
     try: question = prompt('Q: ')
@@ -38,6 +45,7 @@ data = {
 
 # call api
 try:
+    print('>>>', data)
     response_obj = post(url, json=data)
 
     response_json = response_obj.json()
@@ -47,7 +55,7 @@ try:
     # formatting
     console = Console()
     markdown = Markdown(answer)
-    print(); print('Model: ', real_model); print(); console.print(markdown); print()
+    print(); console.print(markdown); print()
     exit(0)
 
 except Exception as e:
