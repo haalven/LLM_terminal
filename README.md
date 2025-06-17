@@ -16,6 +16,8 @@ required:
 
 [ask_openai.toml](https://github.com/haalven/LLM_terminal/blob/main/ask_openai.toml) ➔ you have to insert your `API_KEY` by editing the `my_api_key = "sk-***"` line before running the script.
 
+usage: `ask_openai <model> [question?]`
+
 Choose a specific OpenAI model, See also: [platform.openai.com/docs/models](https://platform.openai.com/docs/models).
 
 ## Ollama API
