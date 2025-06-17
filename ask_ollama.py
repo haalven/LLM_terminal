@@ -5,7 +5,7 @@
 models = {
     'llama':      'llama3.2',
     'gemma':      'gemma3:4b',
-    'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest',
+    'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest'
 }
 
 from os.path import basename
