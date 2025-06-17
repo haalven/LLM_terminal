@@ -18,7 +18,7 @@ required:
 
 usage: `./ask_openai.py <model> [question?]`
 
-Choose a specific OpenAI model, See also: [platform.openai.com/docs/models](https://platform.openai.com/docs/models).
+Choose a specific OpenAI model ➔ see: [platform.openai.com/docs/models](https://platform.openai.com/docs/models).
 
 ## Ollama API
 
