@@ -26,6 +26,6 @@ Choose a specific OpenAI model ➔ see: [platform.openai.com/docs/models](https:
 
 The best general LLMs for computers with 8…16 GB of RAM in March 2025 are `gemma3` by Google (4B, 3.3GB) or `gemma3:12b` (12B, 8.1GB) and `llama3.2` by Meta (3B, 2.0GB). See also: [ollama.com/models](https://ollama.com/models).
 
-Example:
+## Example
 
 ![example screenshot](example1.jpg)
