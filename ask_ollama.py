@@ -3,7 +3,6 @@
 # ask the Ollama API
 
 models = {
-    'gemma12':    'gemma3:12b',
     'gemma':      'gemma3:4b',
     'llama':      'llama3.2',
     'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest'
