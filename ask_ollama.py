@@ -45,7 +45,6 @@ data = {
 
 # call api
 try:
-    print('>>>', data)
     response_obj = post(url, json=data)
 
     response_json = response_obj.json()
