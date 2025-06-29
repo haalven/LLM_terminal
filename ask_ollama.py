@@ -4,7 +4,7 @@
 
 models = {
     'llama':      'llama3.2',
-    'gemma':      'gemma3:4b',
+    'gemma':      'gemma3n:e4b',
     'uncensored': 'CognitiveComputations/dolphin-llama3.1:latest'
 }
 
