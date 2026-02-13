@@ -26,7 +26,7 @@ Choose a specific OpenAI model ➔ see: [platform.openai.com/docs/models](https:
 
 usage: `./ask_ollama.py <model> [question?]`
 
-Good general LLMs for computers with 8…16 GB of RAM in March 2025 are `gemma3:12b` by Google (12B, 8.1GB) and `llama3.1:8b` by Meta (8B, 4.9 GB). See also: [ollama.com/models](https://ollama.com/models).
+Good general LLMs for computers with 8…16 GB of RAM in 2026 are `gemma3:12b` by Google (12B, 8.1GB) and `llama3.1:8b` by Meta (8B, 4.9 GB). See also: [ollama.com/models](https://ollama.com/models).
 
 ## Example
 
